@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Log-In/Sign-In</title>
+</head>
+<body>
+
+    <div class="full-page">
+ 
+        <div id="login-form" class="login-page">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button
+                    type="button" 
+                    onclick="login()"
+                    class="toggle-btn">Log In</button>
+                    <button
+                    type="button" 
+                    onclick="register()"
+                    class="toggle-btn">Register</button>
+
+                </div>
+                <form id="login" class="input-group-login">
+                    <input type="email" class="input-field" placeholder="Enter Email" id="input-email" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" id="input-password" required>
+                    <input type="checkbox" class="check-box"><span>Remember me</span>
+                    <button type="submit" class="submit-btn" onclick="onClickAddButton()"> Log In </button>                
+                </form>
+
+                <form id="register" class="input-group-register">
+                    <input type="text" class="input-field" placeholder="First Name" id="input-name-first" required>
+                    <input type="text" class="input-field" placeholder="Last Name" id="input-name-last" required>
+                    <input type="email" class="input-field" placeholder="Enter Email" id="input-email-reg" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" id="input-password-reg" required>
+                    <input type="password" class="input-field" placeholder="Confirm Password" id="input-password-reg2" required>
+                    <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                    <button type="submit" class="submit-btn" onclick="onClickAddButtonReg()"> Register </button>                
+                </form>
+            </div>
+        </div> 
+
+
+        <!-- <h1>Register</h1>
+        <form action="">
+            <input type="text" placeholder="enter user name">
+            <input type="password " placeholder="enter password">
+            <input type="submit" value="LOGIN">
+        </form>
+        <div class="bottom-text">
+            <span>Already have an account</span>
+            <a href="#">Sign In</a>
+        </div> -->
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
